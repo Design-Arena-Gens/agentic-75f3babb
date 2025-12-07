@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  @apply bg-slate-950 text-slate-50 min-h-screen;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: theme("colors.midnight.500") theme("colors.slate.700");
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: theme("colors.midnight.500");
+  border-radius: 9999px;
+}
